@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2179BD51D37774A0028CB92 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2179BD21D37774A0028CB92 /* BaseRequest.m */; };
+		C2179BD61D37774A0028CB92 /* NetWorkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2179BD41D37774A0028CB92 /* NetWorkRequest.m */; };
 		C231C6191D361AAA009BB26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C231C6181D361AAA009BB26B /* main.m */; };
 		C231C61F1D361AAA009BB26B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C231C61E1D361AAA009BB26B /* ViewController.m */; };
 		C231C6221D361AAA009BB26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C231C6201D361AAA009BB26B /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 		097D4472229F8357FC223952 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C374D786A534EDEF7E7166 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9A504738DFE88723BDE1185F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C2179BD11D37774A0028CB92 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		C2179BD21D37774A0028CB92 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		C2179BD31D37774A0028CB92 /* NetWorkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequest.h; sourceTree = "<group>"; };
+		C2179BD41D37774A0028CB92 /* NetWorkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequest.m; sourceTree = "<group>"; };
 		C231C6141D361AAA009BB26B /* EPB_LiShi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPB_LiShi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C231C6181D361AAA009BB26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C231C61D1D361AAA009BB26B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -101,6 +107,17 @@
 				097D4472229F8357FC223952 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2179BD01D37773D0028CB92 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C2179BD11D37774A0028CB92 /* BaseRequest.h */,
+				C2179BD21D37774A0028CB92 /* BaseRequest.m */,
+				C2179BD31D37774A0028CB92 /* NetWorkRequest.h */,
+				C2179BD41D37774A0028CB92 /* NetWorkRequest.m */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 		C231C60B1D361AA9009BB26B = {
@@ -245,6 +262,7 @@
 		C231C6871D363FB6009BB26B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C2179BD01D37773D0028CB92 /* Request */,
 				C231C6371D362996009BB26B /* Const */,
 			);
 			path = Helpers;
@@ -458,6 +476,8 @@
 				C231C6191D361AAA009BB26B /* main.m in Sources */,
 				C231C6361D362931009BB26B /* RootViewController.m in Sources */,
 				C231C6471D363701009BB26B /* ActivityViewController.m in Sources */,
+				C2179BD61D37774A0028CB92 /* NetWorkRequest.m in Sources */,
+				C2179BD51D37774A0028CB92 /* BaseRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
