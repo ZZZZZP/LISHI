@@ -47,6 +47,10 @@
 		C231C6AE1D365738009BB26B /* My.png in Resources */ = {isa = PBXBuildFile; fileRef = C231C6A81D365738009BB26B /* My.png */; };
 		C231C6AF1D365738009BB26B /* My_Select.png in Resources */ = {isa = PBXBuildFile; fileRef = C231C6A91D365738009BB26B /* My_Select.png */; };
 		C231C6B11D366FF6009BB26B /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C231C6B01D366FF6009BB26B /* welcome.jpg */; };
+		D66770C71D37C78F00A94FA6 /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D66770C51D37C78F00A94FA6 /* ActivityTableViewCell.m */; };
+		D66770C81D37C78F00A94FA6 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66770C61D37C78F00A94FA6 /* ActivityTableViewCell.xib */; };
+		D66770D01D37CE4300A94FA6 /* CycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = D66770CF1D37CE4300A94FA6 /* CycleView.m */; };
+		D66770D31D37CF3B00A94FA6 /* ActivityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D66770D21D37CF3B00A94FA6 /* ActivityRequest.m */; };
 		FB1C041A433BDD3AA01A9A58 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097D4472229F8357FC223952 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +116,13 @@
 		C231C6A81D365738009BB26B /* My.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = My.png; sourceTree = "<group>"; };
 		C231C6A91D365738009BB26B /* My_Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = My_Select.png; sourceTree = "<group>"; };
 		C231C6B01D366FF6009BB26B /* welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcome.jpg; sourceTree = "<group>"; };
+		D66770C41D37C78F00A94FA6 /* ActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		D66770C51D37C78F00A94FA6 /* ActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		D66770C61D37C78F00A94FA6 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		D66770CE1D37CE4300A94FA6 /* CycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleView.h; sourceTree = SOURCE_ROOT; };
+		D66770CF1D37CE4300A94FA6 /* CycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleView.m; sourceTree = SOURCE_ROOT; };
+		D66770D11D37CF3B00A94FA6 /* ActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityRequest.h; sourceTree = "<group>"; };
+		D66770D21D37CF3B00A94FA6 /* ActivityRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +161,8 @@
 				C2179BD21D37774A0028CB92 /* BaseRequest.m */,
 				C2179BD31D37774A0028CB92 /* NetWorkRequest.h */,
 				C2179BD41D37774A0028CB92 /* NetWorkRequest.m */,
+				D66770D11D37CF3B00A94FA6 /* ActivityRequest.h */,
+				D66770D21D37CF3B00A94FA6 /* ActivityRequest.m */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -326,7 +339,11 @@
 		C231C6861D363FB6009BB26B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+
+				D66770C31D37C77400A94FA6 /* 活动cell */,
+
 				C2179BD71D37A5F50028CB92 /* cells */,
+
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +429,18 @@
 			path = LSTabBar_Image;
 			sourceTree = "<group>";
 		};
+		D66770C31D37C77400A94FA6 /* 活动cell */ = {
+			isa = PBXGroup;
+			children = (
+				D66770C41D37C78F00A94FA6 /* ActivityTableViewCell.h */,
+				D66770C51D37C78F00A94FA6 /* ActivityTableViewCell.m */,
+				D66770C61D37C78F00A94FA6 /* ActivityTableViewCell.xib */,
+				D66770CE1D37CE4300A94FA6 /* CycleView.h */,
+				D66770CF1D37CE4300A94FA6 /* CycleView.m */,
+			);
+			name = "活动cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -476,9 +505,16 @@
 				C2179C021D37BF750028CB92 /* IMG_5527.jpg in Resources */,
 				C2179C051D37BF750028CB92 /* IMG_5530.jpg in Resources */,
 				C231C6AC1D365738009BB26B /* equip.png in Resources */,
+<<<<<<< HEAD
 				C2179C031D37BF750028CB92 /* IMG_5528.jpg in Resources */,
+=======
+<<<<<<< HEAD
+				D66770C81D37C78F00A94FA6 /* ActivityTableViewCell.xib in Resources */,
+=======
+>>>>>>> d0e4a32050d4a0a50385e4feb81aa378f19f90b1
 				C2179BF11D37B2AF0028CB92 /* huodong.png in Resources */,
 				C2179BEE1D37B2AF0028CB92 /* haoyou.png in Resources */,
+>>>>>>> 65246787ca470813853541a1f660894fc0d14c22
 				C231C69C1D364611009BB26B /* activity.png in Resources */,
 				C231C6AD1D365738009BB26B /* equip_Select.png in Resources */,
 				C231C6AF1D365738009BB26B /* My_Select.png in Resources */,
@@ -557,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C231C61F1D361AAA009BB26B /* ViewController.m in Sources */,
+				D66770C71D37C78F00A94FA6 /* ActivityTableViewCell.m in Sources */,
 				C231C64A1D36378F009BB26B /* EquipViewController.m in Sources */,
 				C231C6411D3636AB009BB26B /* BaseViewController.m in Sources */,
 				C231C68F1D363FB6009BB26B /* AppDelegate.m in Sources */,
@@ -565,11 +602,13 @@
 				C231C6441D3636CA009BB26B /* CommunityViewController.m in Sources */,
 				C231C6311D3628C4009BB26B /* LiShiTabBar.m in Sources */,
 				C231C6191D361AAA009BB26B /* main.m in Sources */,
+				D66770D31D37CF3B00A94FA6 /* ActivityRequest.m in Sources */,
 				C231C6361D362931009BB26B /* RootViewController.m in Sources */,
 				C2179BDB1D37A6140028CB92 /* MyTableViewCell.m in Sources */,
 				C231C6471D363701009BB26B /* ActivityViewController.m in Sources */,
 				C2179BD61D37774A0028CB92 /* NetWorkRequest.m in Sources */,
 				C2179BD51D37774A0028CB92 /* BaseRequest.m in Sources */,
+				D66770D01D37CE4300A94FA6 /* CycleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
