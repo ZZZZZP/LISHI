@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		C2179BD51D37774A0028CB92 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2179BD21D37774A0028CB92 /* BaseRequest.m */; };
 		C2179BD61D37774A0028CB92 /* NetWorkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2179BD41D37774A0028CB92 /* NetWorkRequest.m */; };
+		C2179BDB1D37A6140028CB92 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2179BD91D37A6140028CB92 /* MyTableViewCell.m */; };
+		C2179BDC1D37A6140028CB92 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2179BDA1D37A6140028CB92 /* MyTableViewCell.xib */; };
+		C2179BED1D37B2AF0028CB92 /* guanzhu.png in Resources */ = {isa = PBXBuildFile; fileRef = C2179BE81D37B2AF0028CB92 /* guanzhu.png */; };
+		C2179BEE1D37B2AF0028CB92 /* haoyou.png in Resources */ = {isa = PBXBuildFile; fileRef = C2179BE91D37B2AF0028CB92 /* haoyou.png */; };
+		C2179BEF1D37B2AF0028CB92 /* qingchu.png in Resources */ = {isa = PBXBuildFile; fileRef = C2179BEA1D37B2AF0028CB92 /* qingchu.png */; };
+		C2179BF01D37B2AF0028CB92 /* yijian.png in Resources */ = {isa = PBXBuildFile; fileRef = C2179BEB1D37B2AF0028CB92 /* yijian.png */; };
+		C2179BF11D37B2AF0028CB92 /* huodong.png in Resources */ = {isa = PBXBuildFile; fileRef = C2179BEC1D37B2AF0028CB92 /* huodong.png */; };
 		C231C6191D361AAA009BB26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C231C6181D361AAA009BB26B /* main.m */; };
 		C231C61F1D361AAA009BB26B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C231C61E1D361AAA009BB26B /* ViewController.m */; };
 		C231C6221D361AAA009BB26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C231C6201D361AAA009BB26B /* Main.storyboard */; };
@@ -42,6 +49,14 @@
 		C2179BD21D37774A0028CB92 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		C2179BD31D37774A0028CB92 /* NetWorkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequest.h; sourceTree = "<group>"; };
 		C2179BD41D37774A0028CB92 /* NetWorkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequest.m; sourceTree = "<group>"; };
+		C2179BD81D37A6140028CB92 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		C2179BD91D37A6140028CB92 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		C2179BDA1D37A6140028CB92 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		C2179BE81D37B2AF0028CB92 /* guanzhu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guanzhu.png; sourceTree = "<group>"; };
+		C2179BE91D37B2AF0028CB92 /* haoyou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haoyou.png; sourceTree = "<group>"; };
+		C2179BEA1D37B2AF0028CB92 /* qingchu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qingchu.png; sourceTree = "<group>"; };
+		C2179BEB1D37B2AF0028CB92 /* yijian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yijian.png; sourceTree = "<group>"; };
+		C2179BEC1D37B2AF0028CB92 /* huodong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huodong.png; sourceTree = "<group>"; };
 		C231C6141D361AAA009BB26B /* EPB_LiShi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPB_LiShi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C231C6181D361AAA009BB26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C231C61D1D361AAA009BB26B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -118,6 +133,23 @@
 				C2179BD41D37774A0028CB92 /* NetWorkRequest.m */,
 			);
 			name = Request;
+			sourceTree = "<group>";
+		};
+		C2179BD71D37A5F50028CB92 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2179BD81D37A6140028CB92 /* MyTableViewCell.h */,
+				C2179BD91D37A6140028CB92 /* MyTableViewCell.m */,
+				C2179BDA1D37A6140028CB92 /* MyTableViewCell.xib */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		C2179BDD1D37AFF40028CB92 /* myImg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = myImg;
 			sourceTree = "<group>";
 		};
 		C231C60B1D361AA9009BB26B = {
@@ -255,6 +287,7 @@
 		C231C6861D363FB6009BB26B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2179BD71D37A5F50028CB92 /* cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +318,12 @@
 		C231C68A1D363FB6009BB26B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2179BDD1D37AFF40028CB92 /* myImg */,
+				C2179BE81D37B2AF0028CB92 /* guanzhu.png */,
+				C2179BE91D37B2AF0028CB92 /* haoyou.png */,
+				C2179BEA1D37B2AF0028CB92 /* qingchu.png */,
+				C2179BEB1D37B2AF0028CB92 /* yijian.png */,
+				C2179BEC1D37B2AF0028CB92 /* huodong.png */,
 				C231C6931D364611009BB26B /* LSTabBar_Image */,
 			);
 			path = Resources;
@@ -396,16 +435,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2179BED1D37B2AF0028CB92 /* guanzhu.png in Resources */,
 				C231C6AC1D365738009BB26B /* equip.png in Resources */,
+				C2179BF11D37B2AF0028CB92 /* huodong.png in Resources */,
+				C2179BEE1D37B2AF0028CB92 /* haoyou.png in Resources */,
 				C231C69C1D364611009BB26B /* activity.png in Resources */,
 				C231C6AD1D365738009BB26B /* equip_Select.png in Resources */,
 				C231C6AF1D365738009BB26B /* My_Select.png in Resources */,
 				C231C6AB1D365738009BB26B /* community_Select.png in Resources */,
 				C231C6AA1D365738009BB26B /* community.png in Resources */,
+				C2179BDC1D37A6140028CB92 /* MyTableViewCell.xib in Resources */,
 				C231C6B11D366FF6009BB26B /* welcome.jpg in Resources */,
 				C231C6AE1D365738009BB26B /* My.png in Resources */,
 				C231C69D1D364611009BB26B /* activity_Select.png in Resources */,
+				C2179BF01D37B2AF0028CB92 /* yijian.png in Resources */,
 				C231C6271D361AAA009BB26B /* LaunchScreen.storyboard in Resources */,
+				C2179BEF1D37B2AF0028CB92 /* qingchu.png in Resources */,
 				C231C6241D361AAA009BB26B /* Assets.xcassets in Resources */,
 				C231C6221D361AAA009BB26B /* Main.storyboard in Resources */,
 			);
@@ -475,6 +520,7 @@
 				C231C6311D3628C4009BB26B /* LiShiTabBar.m in Sources */,
 				C231C6191D361AAA009BB26B /* main.m in Sources */,
 				C231C6361D362931009BB26B /* RootViewController.m in Sources */,
+				C2179BDB1D37A6140028CB92 /* MyTableViewCell.m in Sources */,
 				C231C6471D363701009BB26B /* ActivityViewController.m in Sources */,
 				C2179BD61D37774A0028CB92 /* NetWorkRequest.m in Sources */,
 				C2179BD51D37774A0028CB92 /* BaseRequest.m in Sources */,
