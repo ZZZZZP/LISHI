@@ -8,6 +8,7 @@
 
 #import "MyViewController.h"
 #import "MyTableViewCell.h"
+#import "LoginViewController.h"
 @interface MyViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIView *headView;// 头视图
@@ -32,7 +33,20 @@
     self.mytableView.bounces = NO;// 取消反弹
     
 }
+// 立即登录
+- (IBAction)loginAction:(id)sender {
+    
+    LoginViewController *logVC = [LoginViewController new];
+    // logVC.rootVC.LSTabBar.hidden = YES;
+    [self.navigationController pushViewController:logVC animated:YES];
+    
+}
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.rootVC.LSTabBar.hidden = NO;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

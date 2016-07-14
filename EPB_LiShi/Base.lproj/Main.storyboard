@@ -108,6 +108,9 @@
                                         <state key="normal" title="立即登录">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginAction:" destination="k1n-Z0-szc" eventType="touchUpInside" id="SPo-Sk-y7T"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -45,7 +45,7 @@
     return YES;
 }
 -(void)showImg{
-    [UIView animateKeyframesWithDuration:3 delay:0 options:(UIViewKeyframeAnimationOptionCalculationModeCubicPaced) animations:^{
+    [UIView animateKeyframesWithDuration:2 delay:0 options:(UIViewKeyframeAnimationOptionCalculationModeCubicPaced) animations:^{
         
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:1 animations:^{
             self.splashView.transform = CGAffineTransformMakeScale(1.2, 1.2);
