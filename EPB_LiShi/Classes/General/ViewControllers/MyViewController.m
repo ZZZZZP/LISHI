@@ -7,50 +7,64 @@
 //
 
 #import "MyViewController.h"
-
+#import "MyTableViewCell.h"
 @interface MyViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (strong, nonatomic) UITableView *myTableView;
-@property (strong, nonatomic) UIView *headerView; // 个人信息的头部视图
-@property (strong, nonatomic) UIImageView *headImg;// 用户头像
+
+@property (weak, nonatomic) IBOutlet UIView *headView;// 头视图
+@property (weak, nonatomic) IBOutlet UITableView *mytableView;
+@property (weak, nonatomic) IBOutlet UIImageView *headerImg;// 用户头像
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;// 立即登录按钮
+
+
+
 @end
 
 @implementation MyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
-    [self drawView];
     
-}
-// 画图
--(void)drawView{
-    self.headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, WindownWidth, 100)];
-    self.headerView.backgroundColor = [UIColor whiteColor];
-    self.headImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 75)];
-    self.headImg.image = [UIImage imageNamed:@"welcome.jpg"];
-    self.headImg.center = CGPointMake(self.headerView.center.x - 100, self.headerView.center.y);
-    [self.headerView addSubview:self.headImg];
-    self.myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 220, WindownWidth, WindowHeight - 189)];
-    // 设置tableView代理
-    self.myTableView.delegate = self;
+    // 给头像切圆角
+    self.headerImg.layer.cornerRadius = 5;
+    self.headerImg.layer.masksToBounds = YES;
     // 注册cell
-    [self.myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
+    [self.mytableView registerNib:[UINib nibWithNibName:@"MyTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:MyTableViewCell_Identify];
+    self.mytableView.bounces = NO;// 取消反弹
     
-    
-    [self.view addSubview:self.headerView];
-    [self.view addSubview:self.myTableView];
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 #pragma mark ------ myTableView的代理方法
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    MyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyTableViewCell_Identify];
+    
+    
+    if (indexPath.row == 0) {
+        cell.myLabel.text = @"我的好友";
+        cell.ImgView.image = [UIImage imageNamed:@"haoyou"];
+    }else if (indexPath.row == 1){
+        cell.myLabel.text = @"我的关注";
+        cell.ImgView.image = [UIImage imageNamed:@"guanzhu"];
+    }else if (indexPath.row == 2){
+        cell.myLabel.text = @"我报名的活动";
+        cell.ImgView.image = [UIImage imageNamed:@"huodong"];
+    }else if (indexPath.row == 3){
+        cell.myLabel.text = @"意见反馈";
+        cell.ImgView.image = [UIImage imageNamed:@"yijian"];
+    }else if (indexPath.row == 4){
+        cell.myLabel.text = @"清理缓存";
+        cell.ImgView.image = [UIImage imageNamed:@"qingchu"];
+    }
+    
+    
     return cell;
 }
 
